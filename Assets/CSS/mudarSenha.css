@@ -1,0 +1,76 @@
+* {
+    font-family: "Saira", sans-serif;
+}
+
+h2 {
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #252525;
+    padding: 50px;
+    width: 400px;
+}
+
+input {
+    border: 2px solid #ff0000;
+    outline: none;
+    padding: 4px;
+    transition: 150ms ease;
+}
+
+input:hover {
+    outline: solid #fff;
+}
+
+#mensagem {
+    margin: 10px;
+    width: 400px;
+    background-color: #ff0000;
+}
+
+.mudarsenha-imagem {
+    margin: 10px;
+    border: 2px solid #ff0000;
+    width: 400px;
+}
+
+.mudarsenha-botao {
+    background-color: #990000;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid transparent;
+
+    transition: 350ms;
+}
+
+.mudarsenha-botao:hover {
+    background-color: #ff0000;
+    color: #fff;
+    border: 2px solid #fff;
+
+    transition: 350ms;
+}
+
+
+@media (max-width: 768px) {
+    form {
+        width: 280px;
+    }
+
+    #mensagem {
+        margin: 10px;
+        width: 280px;
+        background-color: #ff0000;
+    }
+    
+    .mudarsenha-imagem {
+        margin: 10px;
+        border: 2px solid #ff0000;
+        width: 280px;
+    }
+}

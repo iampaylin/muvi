@@ -1,0 +1,75 @@
+/* Area de pesquisa e botão de buscar */
+
+input[type=search] {
+    border: 0px;
+    outline: none;
+    padding: 10px;
+    width: 50%;
+    margin: 0px 0px 20px 0px;
+    border-radius: 2px;
+}
+
+.searchButton {
+    background-color: #990000;
+    color: #f3f3f3;
+
+    width: 50%;
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    transition: 300ms;
+}
+
+.searchButton:hover {
+    background-color: #FF0000;
+    color: #f3f3f3;
+}
+
+/* Estilização dos filmes em Minha Lista e Favoritos */
+.movie {
+    background-color: #252525;
+    border-radius: 0px;
+    padding: 30px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie img {
+    max-width: 200px;
+    height: 280px;
+    border: 2px solid #f3f3f3;
+    margin-bottom: 20px;
+}
+
+.movie button {
+    background-color: #990000;
+    transition: 350ms;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 220px;
+    padding: 5px;
+}
+
+.movie button:hover {
+    
+    border: 2px solid #fff;
+    transition: 350ms;
+}
+
+@media (max-width: 768px) {
+    input[type=search] {
+        outline: none;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .searchButton {
+        width: 80%;
+    }
+}
