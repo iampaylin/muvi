@@ -1,22 +1,15 @@
 <?php
-function parse_database_url($url) {
-    $parsed_url = parse_url($url);
-    
-    return [
-        'host' => $parsed_url['host'],
-        'port' => $parsed_url['port'],
-        'user' => $parsed_url['user'],
-        'pass' => $parsed_url['pass'],
-        'dbname' => ltrim($parsed_url['path'], '/')
-    ];
-}
+// Configurações de conexão com o banco de dados
+$servername = "localhost"; // endereço do servidor MySQL
+$username = "root"; // nome de usuário padrão do MySQL no XAMPP
+$password = ""; // senha padrão do MySQL no XAMPP (em branco por padrão)
+$dbname = "muvidatabase"; // nome do seu banco de dados
 
-$database_url = getenv('postgresql://postgres:ZViGntZgSRsLLwwVzZFXAtMMGEeGTSso@roundhouse.proxy.rlwy.net:29734/railway');
-$db_info = parse_database_url($database_url);
+// Cria a conexão
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-$conn = new mysqli($db_info['host'], $db_info['user'], $db_info['pass'], $db_info['dbname'], $db_info['port']);
-
+// Verifica a conexão
 if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
+    die("Erro na conexão com o banco de dados: " . $conn->connect_error);
 }
 ?>
