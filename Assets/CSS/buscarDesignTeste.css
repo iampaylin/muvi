@@ -1,0 +1,94 @@
+/* Area de pesquisa e botão de buscar */
+
+input[type=search] {
+    width: 50%;
+
+    border: 0px;
+    border-radius: 2px;
+
+    outline: none;
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+.searchButton {
+    background-color: #990000;
+    color: #f3f3f3;
+
+    width: 50%;
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    transition: 300ms;
+}
+
+.searchButton:hover {
+    background-color: #FF0000;
+    color: #f3f3f3;
+}
+
+/* Estilização dos filmes em Minha Lista e Favoritos */
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #1d1d1d4b;
+    border: 1px solid #ffffff44;
+    border-radius: 0px;
+    padding: 30px;
+    margin-bottom: 10px;
+
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,1);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,1);
+    box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,1);
+
+    transition: 350ms;
+}
+
+.movie:hover {
+    background-color: #000;
+    border: 1px solid #FF0000;
+
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,1);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,1);
+    box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,1);
+
+    transition: 350ms;
+}
+
+.movie img {
+    max-width: 200px;
+    height: 280px;
+    border: 2px solid #f3f3f3;
+    margin-bottom: 20px;
+}
+
+.movie button {
+    background-color: #990000;
+    transition: 350ms;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 220px;
+    padding: 5px;
+}
+
+.movie button:hover {
+    background-color: #FF0000;
+    transition: 350ms;
+}
+
+@media (max-width: 768px) {
+    input[type=search] {
+        outline: none;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .searchButton {
+        width: 80%;
+    }
+}

@@ -11,7 +11,6 @@ document.getElementById('formMudarSenha').addEventListener('submit', async funct
         return;
     }
 
-    // Log para depuração
     console.log('Dados para enviar:', { senhaAtual, novaSenha });
 
     try {
@@ -26,8 +25,8 @@ document.getElementById('formMudarSenha').addEventListener('submit', async funct
         const result = await response.json();
         mensagem.textContent = result.message;
 
-        // Log da resposta
         console.log('Resposta do servidor:', result);
+        
     } catch (error) {
         mensagem.textContent = 'Erro ao tentar mudar a senha.';
         console.error('Erro:', error);

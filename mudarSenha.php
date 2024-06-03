@@ -9,7 +9,6 @@ if (!isset($_SESSION['userid'])) {
     exit;
 }
 
-// Obtém os dados do pedido
 $data = json_decode(file_get_contents('php://input'), true);
 
 if (!$data) {

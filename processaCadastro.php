@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Executa a instrução SQL
     if ($stmt->execute()) {
-        echo "Cadastro realizado com sucesso!";
+        header('location: cadastroRealizado.html');
     } else {
         echo "Erro ao cadastrar: " . $conn->error;
     }
