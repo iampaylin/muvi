@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24/05/2024 às 22:18
+-- Tempo de geração: 03/06/2024 às 20:06
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -44,8 +44,7 @@ INSERT INTO `favorites` (`id`, `user_id`, `movie_id`, `title`, `poster_path`, `g
 (28, 4, 1023922, 'MaXXXine', '/k2L4Lsuo7dndJXBFGm2j95eTi1X.jpg', 'Crime, Terror, Thriller'),
 (29, 4, 50546, 'Esposa de Mentirinha', '/v8ct2LskBXLcPHrW3uvtpyTcwfl.jpg', 'Comédia, Romance'),
 (30, 4, 14836, 'Coraline e o Mundo Secreto', '/rranXmvqPT4NoXzmxhFtXr9nNYT.jpg', 'Animação, Família, Fantasia'),
-(34, 3, 50546, 'Esposa de Mentirinha', '/v8ct2LskBXLcPHrW3uvtpyTcwfl.jpg', 'Comédia, Romance'),
-(35, 3, 9297, 'A Casa Monstro', '/qBEpDF693Bql7roL6LY3SsNHg52.jpg', 'Animação, Comédia, Família, Fantasia');
+(36, 2, 50546, 'Esposa de Mentirinha', '/v8ct2LskBXLcPHrW3uvtpyTcwfl.jpg', 'Comédia, Romance');
 
 -- --------------------------------------------------------
 
@@ -68,7 +67,6 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id`, `nome_sobrenome`, `senha`, `apelido`, `email`, `data_nascimento`) VALUES
 (2, 'Ana Banana', 'senha1234', 'Ana a Banana', 'anabanana@banana.com', '2004-05-16'),
-(3, 'Joao Bananao', 'senha1234', 'Joao o Bananao', 'joaobananao@banana.com', '2004-04-16'),
 (4, 'Emillaynes', 'senha123', 'Beijinho', 'emillayne@beijinho.com', '1999-09-25');
 
 --
@@ -96,7 +94,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `favorites`
 --
 ALTER TABLE `favorites`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
